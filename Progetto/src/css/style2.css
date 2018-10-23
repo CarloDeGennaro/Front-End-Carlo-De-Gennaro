@@ -1,0 +1,76 @@
+.testa {
+  background-color: #7FFFD4;
+}
+h1{
+  margin: 0px;
+}
+
+p{
+  margin:0;
+}
+
+.primodiv{
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    width: 100%;
+}
+
+.testa {
+  margin: 0;
+}
+
+ .bottoni{
+    display: inline;
+ }
+
+.articolo1 {
+  vertical-align: top;
+    display: inline-block;
+    margin: 0;
+    width: 33%;
+    margin-bottom: 100px;
+}
+
+.secondodiv{
+  float:left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#finepagina{
+  position: fixed;
+  bottom:0;
+  background-color: #000000;
+  color: #ffffff;
+    width: 100%;
+    margin:0;
+}
+
+.piccolospan{
+  border: 2px solid grey;
+    background-color: blue;
+      color: #ffffff;
+}
+
+.grandespan{
+  border: 2px solid grey;
+  padding: 8px 10px;
+  background-color: white;
+}
+
+.grandespan2{
+  border: 2px solid grey;
+  padding: 8px 10px;
+  background-color: green;
+}
+
+#spanid{
+  color: blue;
+}
+
+
+footer{
+  margin-bottom:50px;
+}
