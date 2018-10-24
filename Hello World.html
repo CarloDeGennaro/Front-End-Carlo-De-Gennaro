@@ -1,101 +1,135 @@
 <!DOCTYPE html>
 <html>
 	<head>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="style2.css">
 		<meta charset="UTF-8">
+
 		<meta name="description" content="pagina HTML">
 		<meta name="keywords" content="HTML">
 		<meta name="author" content="Carlo De Gennaro">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
-
+	<body>
 		<div class="primodiv">
 			<p>Project name </p>
 		</div>
 
-	<section>
+		<div id="finepagina">
+				<p>This is a cookie policy,click <span id="spanid">here</span> to close it.</p>
+		</div>
+<!--
+	<section class="testa">
 	  <h1>Hello, world!</h1>
 	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
 			 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
 			 ex ea commodo consequat.
 		 </br>
+		 		<div class="bottoni">
 		 			<img src="bottone.jpeg" alt="Immagine bottone" width="20">
 		 			<p><a href="https://www.amazon.it" target="_blank"><span style="color:blue"></span> Slides>></a></p>
-
-					<!--
-		 			<a href="https://www.zingarate.com/grecia/mare-in-grecia.html"><button type="button">Click Me!</button/></a>
-		 			<a href="https://www.zingarate.com/grecia/mare-in-grecia.html"><button type="button">Slides ></button/></a>
-					-->
-		 </p>
-	</section>
-
-			<div>
-					<article>
-							<h3>Article Title 1</h3>
-								<img src="immagine1.jpeg" alt="Immagine 1" width="200">
-								<p>
-									Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur
-									 purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-									 Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis.
-									 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-								</p>
-
-					</article>
-			</div>
-
-			<div>
-					<article class = "articolo2">
-							<h3>Article Title 2</h3>
-								<img src="immagine2.jpeg" alt="Immagine 2" width="200">
-								<p>
-									Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur
-									 purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-									 Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis.
-									 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-								</p>
-					</article>
 				</div>
 
-				<div>
-					<article class = "articolo1">
-							<h3>Article Title 3</h3>
-								<img src="immagine3.jpeg" alt="Immagine 3" width="200">
-								<p>
+		 </p>
+	</section>
+-->
+<div class="jumbotron">
+	<h1 class="display-4">Hello, world!</h1>
+	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+		 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+		 ex ea commodo consequat.</p>
+	<p class="lead">
+<!--	 <a  class="btn btn-primary btn-lg" href="#" role="button"><img src="github.png" alt="Immagine bottone" width=40%></a> -->
+<a id="imgithub" class="btn btn-primary btn-lg" href="#" role="button"> <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
+<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+
+</svg>  </a>
+		 <a href="https://www.amazon.it" target="_blank" class="btn btn-primary btn-lg"  href="#" role="button">Slides>></a>
+	</p>
+</div>
+
+<div class="row">
+		<!--			<section>   -->
+		<!--			<article class ="articolo1" >     -->
+			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+							<h2>Article Title 1</h2>
+
+                <img src="immagine1.jpeg" class="img-thumbnail" alt="Immagine 1">
+
+								<span class="piccolospan">tech</span>
+								<p class="article">
 									Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur
 									 purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 									 Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis.
 									 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 								</p>
-							</div>
-
-							<div>
+									<span  id="like1" class="grandespan">like</span>
 					</article>
+					<!--  </article>  -->
 
-					<article class = "articolo1">
-							<h3>Article Title 4</h3>
-								<img src="immagine4.jpeg" alt="Immagine4" width="200">
-								<p>
+
+				<!--	<article <class ="articolo1"> -->
+					<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+							<h2>Article Title 2</h2>
+
+							  <img src="immagine2.jpeg" class="img-thumbnail" alt="Immagine 2">
+
+
+
+									<span class="piccolospan">tech</span>
+								<p class="article">
 									Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur
 									 purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 									 Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis.
 									 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 								</p>
-							</div>
 
-					</article>
+								<span id="like2" class="grandespan">like</span>
+		<!--			</article>         -->
+	</article>
 
+
+				<!--	<article class ="articolo1" > -->
+				<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+							<h2>Article Title 3</h2>
+							  <img src="immagine3.jpeg" class="img-thumbnail" alt="Immagine 3">
+								<span class="piccolospan">tech</span>
+								<!--
+									<span class="piccolospan">tech</span>
+								-->
+								<p class="article">
+									Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur
+									 purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+									 Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis.
+									 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+								</p>
+							<span id="like3" class="grandespan">like</span>
+						</article>
+				<!--	</article>   -->
+
+   <!-- 	<article class ="articolo1">   -->
+	 			<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+							<h2>Article Title 4</h2>
+								  <img src="immagine4.jpeg" class="img-thumbnail" alt="Immagine 4">
+									<span class="piccolospan">tech</span>
+								<p class="article">
+									Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur
+									 purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+									 Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis.
+									 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+								</p>
+							<span id="like4" class="grandespan">like</span>
+						</article>
+<!--
+		</article>
+		</section>
+-->
+</div>
 					<footer>
-					2018 Company, inc
+					  	&copy; 2018 Company, inc
 					</footer>
 
-					<div>
-					<p>This is a cookie policy,click <span style="color:blue">here</span> to close it.</p>
-					</div>
-
-	<body>
-
-
-
+	<script type="text/javascript" src="javascriptHello.js"></script>
   </body>
 </html>
