@@ -1,10 +1,30 @@
-
+const $ = require('jquery');
+/*
 var nascondi = document.getElementById("spanid"); //al click su span id
 nascondi.addEventListener("click",  function () {
     document.getElementById("finepagina").style.display='none'; //nascondi cookie
 });
+*/
+$(document).ready(() => {
+
+$('#spanid').on('click', () => {
+  $('#cookie').hide();
+});
 
 
+/*
+$('.grandespan').on('click', event => {
+  $(event.currentTarget).addClass('grandespan2')
+}).on('click', event => {
+  $(event.currentTarget).removeClass('grandespan2')
+});
+*/
+
+$('.grandespan').on('click', event => {
+  $(event.currentTarget).toggleClass('grandespan2');
+})
+});
+/*
 
 var like1 = document.getElementById("like1");
 console.log("like1");
@@ -54,3 +74,5 @@ else
        like4.className = "grandespan";
       }
 });
+
+*/
