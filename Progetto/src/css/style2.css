@@ -1,0 +1,133 @@
+#imgithub {
+  fill: white;
+}
+/*
+display-4{
+  margin: 0;
+}
+*/
+.lead {
+  margin: 0px;
+}
+h1 {
+  margin: 0px;
+}
+p {
+  margin: 0;
+}
+/*
+.btn.btn-primary{
+  padding: 10px;
+}
+*/
+.btn.btn-primary.btn-lg {
+  padding: 10px 5px 5px 5px;
+  height: 40px;
+  weight: 20px;
+  font-size: 70%;
+}
+.primodiv {
+  background-color: #2F4F4F;
+  color: #ffffff;
+  margin: 0;
+  width: 100%;
+  padding: 10px 10px 10px 60px;
+}
+/*
+.testa {
+  margin: 0;
+  background-color: #7FFFD4;
+}
+*/
+/*
+ .bottoni{
+    display: inline;
+    border-radius:3%;
+ }
+*/
+.img-thumbnail {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 3%;
+}
+/*
+.articolo1 {
+    vertical-align: top;
+    display: inline-block;
+    margin: 0;
+    width: 31%;
+    margin-bottom: 100px;
+    margin-right:2%;
+}
+*/
+/*
+.secondodiv{
+  float:left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+*/
+/*
+#finepagina{
+  position: fixed;
+  bottom:0;
+  background-color: @black;
+  color: @white;
+  width: 100%;
+  margin:0;
+  padding: 10px;
+}
+*/
+.grandespan {
+  border: 1px solid grey;
+  padding: 8px 10px;
+  border-radius: 10%;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -35px;
+}
+.grandespan2 {
+  border: 1px solid grey;
+  padding: 8px 10px;
+  border-radius: 10%;
+  background-color: green;
+  position: absolute;
+  bottom: -35px;
+}
+#spanid {
+  color: blue;
+}
+.article {
+  margin: 10px 0px;
+}
+.col-xs-12.col-sm-6.col-md-4.col-lg-4 {
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+}
+footer {
+  margin-bottom: 50px;
+  padding-left: 60px;
+}
+#cookie {
+  position: fixed;
+  bottom: 0;
+  background-color: #2F4F4F;
+  color: #ffffff;
+  width: 100%;
+  margin: 0px;
+  padding: 10px 60px;
+  z-index: 50;
+  padding: 15px 60px;
+}
+.row {
+  margin: 0px 50px;
+}
+.jumbotron {
+  padding: 0px 60px 30px 60px;
+  margin: 0px;
+}
+#articolo4 {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
