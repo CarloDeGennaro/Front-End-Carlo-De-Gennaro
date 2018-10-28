@@ -13,8 +13,8 @@ $.ajax({
   method: "GET",
   dataType: 'json',
   success: function(result) {
-  for(var i=0; i< result.length; i++){              //con la doAjax in result andrà un oggetto composto dalle stringhe in ajaxFile.json
-      $('#provaAjax').append("<p>" + result[i].text + "<p>");          //invce di scrivere in html, passerò l'oggetto nei tag tramite questa funzione che me li trasferirà direttamente nella pagina html
+  for(var i=0; i< result.length; i++){
+      $('#provaAjax').append("<p>" + result[i].text + "<p>");     
   }
   },
   error: function() {
