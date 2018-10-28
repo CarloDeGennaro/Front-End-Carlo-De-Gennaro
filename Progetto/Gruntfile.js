@@ -141,5 +141,5 @@ grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 grunt.task.registerTask('develop', ['watch']);
-grunt.task.registerTask('build', ['less','cssmin','browserify','babel','uglify','serve']);
+grunt.task.registerTask('build', ['cssmin','browserify','babel','uglify','serve']);
 };

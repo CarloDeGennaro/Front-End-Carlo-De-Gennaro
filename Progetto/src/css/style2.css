@@ -7,7 +7,7 @@ display-4{
 }
 */
 .lead {
-  margin: 0;
+  margin: 0px;
 }
 h1 {
   margin: 0px;
@@ -82,14 +82,18 @@ p {
 .grandespan {
   border: 1px solid grey;
   padding: 8px 10px;
-  border-radius: 20%;
+  border-radius: 10%;
   background-color: #ffffff;
+  position: absolute;
+  bottom: -35px;
 }
 .grandespan2 {
   border: 1px solid grey;
   padding: 8px 10px;
-  border-radius: 20%;
+  border-radius: 10%;
   background-color: green;
+  position: absolute;
+  bottom: -35px;
 }
 #spanid {
   color: blue;
@@ -98,7 +102,8 @@ p {
   margin: 10px 0px;
 }
 .col-xs-12.col-sm-6.col-md-4.col-lg-4 {
-  padding: 10px 10px 10px 60px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
 }
 footer {
   margin-bottom: 50px;
@@ -119,6 +124,10 @@ footer {
   margin: 0px 50px;
 }
 .jumbotron {
-  padding: 0px 60px;
-  margin-top: 60px;
+  padding: 0px 60px 30px 60px;
+  margin: 0px;
+}
+#articolo4 {
+  margin-top: 30px;
+  margin-bottom: 80px;
 }
