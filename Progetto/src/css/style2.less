@@ -1,15 +1,21 @@
-.testa {
-  background-color: #7FFFD4;
+@dark-blue: #2F4F4F;
+@white: #ffffff;
+
+.create-section() {
+  border: 1px solid grey;
+  padding: 8px 10px;
+  border-radius: 20%;
 }
+
 
 #imgithub{
   fill: white;
 }
-
-splay-4{
+/*
+display-4{
   margin: 0;
 }
-
+*/
 .lead{
   margin:0;
 }
@@ -21,86 +27,78 @@ h1{
 p{
   margin:0;
 }
-
+/*
 .btn.btn-primary{
   padding: 10px;
 }
-
+*/
 .btn.btn-primary.btn-lg{
-  padding: 5px;
+  padding: 10px 5px 5px 5px;
   height:40px;
   weight: 20px;
+  font-size: 70%;
 }
 
 .primodiv{
-    background-color: #000000;
+    background-color: @dark-blue;
     color: #ffffff;
     margin: 0;
     width: 100%;
-    padding:10px;
+    padding:10px 10px 10px 60px;
 }
-
+/*
 .testa {
   margin: 0;
+  background-color: #7FFFD4;
 }
-
+*/
+/*
  .bottoni{
     display: inline;
     border-radius:3%;
  }
-
+*/
  .img-thumbnail{
    width: 100%;
    padding:0;
    margin-bottom:3%;
  }
-
+/*
 .articolo1 {
-  vertical-align: top;
+    vertical-align: top;
     display: inline-block;
     margin: 0;
     width: 31%;
     margin-bottom: 100px;
     margin-right:2%;
 }
-
-
-
+*/
+/*
 .secondodiv{
   float:left;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
+*/
+/*
 #finepagina{
   position: fixed;
   bottom:0;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: @black;
+  color: @white;
   width: 100%;
   margin:0;
   padding: 10px;
 }
-
-.piccolospan{
-  border: 2px solid grey;
-    background-color: #4682B4;
-      color: #ffffff;
-      padding: 5px;
-      border-radius: 20%;
-}
-
+*/
 .grandespan{
-  border: 1px solid grey;
-  padding: 8px 10px;
-  background-color: white;
-  border-radius: 20%;
+.create-section();
+  background-color: @white;
 }
 
 .grandespan2{
-  border: 2px solid grey;
-  padding: 8px 10px;
+.create-section();
   background-color: green;
 }
 
@@ -112,9 +110,31 @@ p{
 }
 
 .col-xs-12.col-sm-6.col-md-4.col-lg-4{
-padding:10px;
+padding:10px 10px 10px 60px;
 }
 
 footer{
   margin-bottom:50px;
+  padding-left:60px;
+}
+
+#cookie{
+  position: fixed;
+  bottom:0;
+  background-color: @dark-blue;
+  color: @white;
+  width: 100%;
+  margin: 0px;
+  padding: 10px 60px;
+  z-index: 50;
+  padding: 15px 60px;
+}
+
+.row{
+  margin: 0px 50px;
+}
+
+.jumbotron{
+padding: 0px 60px;
+margin-top:60px;
 }
