@@ -8,36 +8,30 @@ nascondi.addEventListener("click",  function () {
 
 
 
-$.ajax({
-  url: "articoli.json",
-  method: "GET",
-  dataType: 'json',
-  success: function(result) {
-  //for(var i=0; i< result.length; i++){
-  $('#articolo1').append("<h3>" + result[0].Text + "</h3>");
-  $('#articolo1').append("<img src="+result[0].Immagine+" class='img-thumbnail'>");
-  $('#articolo1').append("<span class="+"'label label-primary'"+">" + result[0].Tech + "</span>");
-  $('#articolo1').append("<p>" + result[0].paragrafo + "</p>");
-  $('#articolo2').append("<h3>" + result[1].Text + "</h3>");
-  $('#articolo2').append("<img src="+result[1].Immagine+" class='img-thumbnail'>");
-  $('#articolo2').append("<span class="+"'label label-primary'"+">" + result[1].Tech + "</span>");
-  $('#articolo2').append("<p>" + result[1].paragrafo + "</p>");
-  $('#articolo3').append("<h3>" + result[2].Text + "</h3>");
-  $('#articolo3').append("<img src="+result[2].Immagine+" class='img-thumbnail'>");
-  $('#articolo3').append("<span class="+"'label label-primary'"+">" + result[2].Tech + "</span>");
-  $('#articolo3').append("<p>" + result[2].paragrafo + "</p>");
-  $('#articolo4').append("<h3>" + result[3].Text + "</h3>");
-  $('#articolo4').append("<img src="+result[3].Immagine+" class='img-thumbnail'>");
-  $('#articolo4').append("<span class="+"'label label-primary'"+">" + result[3].Tech + "</span>");
-  $('#articolo4').append("<p>" + result[3].paragrafo + "</p>");
+const Mustache = require('Mustache');
+doAjax();
 
-  },
-  error: function() {
-    console.log('error');
-  }
 
-});
-
+function doAjax(){
+  $.ajax({
+    url: 'articoli.json',
+    method: 'GET',
+    dataType: "json",
+    success: function(result) {
+      //  $.each(result, function(key, value) {
+      var template = $('#template').html();
+      //console.log(template);
+      var rendered = Mustache.render(template, result);
+      //console.log('il renderizzato:');
+      //    console.log(rendered);
+      $('#articoli').html(rendered);
+    },
+      error: function(error){
+      console.log("Errore insuccesso chiamata:");
+      console.log(error);
+    }
+  });
+};
 
 //chiamata ajax per i 4 articoli
 
@@ -97,11 +91,11 @@ $('.grandespan').on('click', event => {
 });
 */
 
-
+$(document).ajaxComplete(function(){
 $('.grandespan').on('click', event => {
   $(event.currentTarget).toggleClass('grandespan2');
 });
-
+});
 /*codice javascript
 var like1 = document.getElementById("like1");
 console.log("like1");

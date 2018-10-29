@@ -54,19 +54,19 @@
 </div>
 
 
-<section id="articoli" class="row">
+<section id="articolo" class="row">
 	<script id="template" type="x-tmpl-mustache">
 	{{#articoli}}
 		<article class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-			<h3>{{Text}}</h3>
-			<img class=".img-thumbnail" alt="Not Found" src="{{Immagine}}">
-			<span class="label label-primary">{{Tech}}</span>
-			<p>{{paragrafo}}</p>
+			<h3>{{title}}</h3>
+			<img class=".img-thumbnail" alt="Not Found" src="{{image}}">
+			<span class="label label-primary">{{tech}}</span>
+			<p>{{text}}</p>
 			{{^like}}
-			<button type="button" class="grandespan" name="button">like</button>
+			<button type="button" class="btn btn-default" name="button">like</button>
 			{{/like}}
 			{{#like}}
-			<button type="button" class="grandespan2" name="button">like</button>
+			<button type="button" class="btn btn-success" name="button">like</button>
 			{{/like}}
 		</article>
 	{{/articoli}}
